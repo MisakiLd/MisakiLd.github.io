@@ -20,9 +20,34 @@
       
         <tags>
             
+            <tag> 标签一 </tag>
+            
             <tag> ballball啦 </tag>
             
-            <tag> 标签一 </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第二</title>
+      <link href="/2019/10/18/C#-1-/"/>
+      <url>/2019/10/18/C#-1-/</url>
+      
+        <content type="html"><![CDATA[<p>Console.WriteLine(“”); 内容输出至控制台<br>Console.ReadKey();     暂停当前程序，等待按任意键<br>#注释<br>//&nbsp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&ensp;&ensp;&ensp; 行注释<br>/* */    &ensp;&ensp;&ensp;&ensp;&ensp;  大段文本注释<br>///      &ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp; 类、方法注释<br>ctrl+k+c &ensp;&nbsp;注释所选代码<br>ctrl+k+u    &ensp;&nbsp;取消注释</p><figure class="highlight plain"><figcaption><span>折叠（起）</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">   #endregion          折叠（止）  </span><br><span class="line">```  </span><br><span class="line">        </span><br><span class="line">#解决方案</span><br><span class="line">Properties:属性</span><br><span class="line">App.config:配置文件</span><br><span class="line">Program:类文件</span><br><span class="line"></span><br><span class="line">变量</span><br><span class="line"></span><br><span class="line">变量类型 变量名 = 值    </span><br><span class="line">```int number = 10;</span><br><span class="line">    int speed;</span><br><span class="line">   speed = 10;</span><br><span class="line">```  </span><br><span class="line">先声明，后赋值，再使用</span><br><span class="line"># 基本数据类型 #</span><br><span class="line">1. **int**   </span><br><span class="line">   范围-2147483648~2147483647</span><br><span class="line">2. **float**  </span><br><span class="line">单精度小数  </span><br><span class="line">数值后需加f。  </span><br><span class="line">整数、小数，小数点后7位</span><br><span class="line">3. **double**  </span><br><span class="line">双精度小数  </span><br><span class="line">小数点后15~16位</span><br><span class="line">4. **string**  </span><br><span class="line">字符串类型  </span><br><span class="line">存储文本、空。  </span><br><span class="line">值需加双引号  </span><br><span class="line">5. **char**  </span><br><span class="line">字符类型  </span><br><span class="line">存储单个字符，最多最少只能一个字符，不能存储空  </span><br><span class="line">值需加单引号  </span><br><span class="line">6. **bool**  </span><br><span class="line">描述对错  </span><br><span class="line">值只有true和false</span><br><span class="line">#运算符</span><br><span class="line">1. 算术运算符  </span><br><span class="line">（1）+&amp;nbsp;-&amp;nbsp;*&amp;nbsp;/  </span><br><span class="line">10/3 = 3  取整  </span><br><span class="line">10%3 = 1  取余  </span><br><span class="line">（2）“=”和“+”</span><br><span class="line">#占位符</span><br><span class="line">&#123;&#125;</span><br><span class="line">```int A =10  </span><br><span class="line">float B =20  </span><br><span class="line">double C = 30  </span><br><span class="line">Console.WriteLine(&quot;XXX&#123;0&#125;,DAV&#123;1&#125;,IFN&#123;2&#125;&quot;，A,B,C);</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> C# </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C# </tag>
             
         </tags>
       
@@ -48,7 +73,7 @@
       <link href="/2019/10/16/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/"/>
       <url>/2019/10/16/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/</url>
       
-        <content type="html"><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>#引用<br> 前加&gt;</p><blockquote><p>有些人活着<br>但他已经死了<br>有些人死了<br>但他依旧活着</p></blockquote><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ol><li>第一</li><li>第二</li><li>第三</li></ol><h1 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h1><p>前后各一个*</p><p><em>斜体</em></p><h1 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h1><p>前后各两个**</p><p><strong>加粗</strong></p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>前后三个`</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list_1 = set(list_1)</span><br><span class="line">list_2 = set([2, 6, 0, 66, 22, 8, 4])</span><br></pre></td></tr></table></figure><h1 id="网页"><a href="#网页" class="headerlink" title="网页"></a>网页</h1><p>方括号加圆括号</p><p>方括号填名称，圆括号填网址</p><p><a href="https://www.baidu.com/" target="_blank" rel="noopener">百度官网</a></p><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p>三个星</p><hr><p><img src="https://img.vim-cn.com/a5/4981b1d483d7354faacc270ad1a30ca2b27621.jpg" alt></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h1><p>#2.引用<br> 前加&gt;</p><blockquote><p>—–鲁迅</p></blockquote><h1 id="3-列表"><a href="#3-列表" class="headerlink" title="3.列表"></a>3.列表</h1><ol><li>第一</li><li>第二</li><li>第三</li></ol><h1 id="4-斜体"><a href="#4-斜体" class="headerlink" title="4.斜体"></a>4.斜体</h1><p>前后各一个*</p><p><em>斜体</em></p><h1 id="5-加粗"><a href="#5-加粗" class="headerlink" title="5.加粗"></a>5.加粗</h1><p>前后各两个**</p><p><strong>加粗</strong></p><h1 id="6-代码"><a href="#6-代码" class="headerlink" title="6.代码"></a>6.代码</h1><p>前后三个`</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list_1 = set(list_1)</span><br><span class="line">list_2 = set([2, 6, 0, 66, 22, 8, 4])</span><br></pre></td></tr></table></figure><h1 id="7-网页"><a href="#7-网页" class="headerlink" title="7.网页"></a>7.网页</h1><p>方括号加圆括号</p><p>方括号填名称，圆括号填网址</p><p><a href="https://www.baidu.com/" target="_blank" rel="noopener">百度官网</a></p><h1 id="8-分割线"><a href="#8-分割线" class="headerlink" title="8.分割线"></a>8.分割线</h1><p>三个星</p><hr><p><img src="https://img.vim-cn.com/a5/4981b1d483d7354faacc270ad1a30ca2b27621.jpg" alt><br>#9.换行#<br>末尾双空格<br>1234<br>5678<br>#10.空格#<br><code>&amp;nbsp;</code> &nbsp;不断行一个空格<br><code>&amp;ensp;</code>&ensp;两个空格<br><code>&amp;emsp;</code>&ensp;四个空格  </p>]]></content>
       
       
       <categories>
