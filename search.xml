@@ -4,6 +4,126 @@
   
     
     <entry>
+      <title>C#基础记录(4)</title>
+      <link href="/2020/02/18/c%E6%B2%99%E5%9D%A14/"/>
+      <url>/2020/02/18/c%E6%B2%99%E5%9D%A14/</url>
+      
+        <content type="html"><![CDATA[<h1 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h1><p>语法<br>while(循环条件)<br>{<br>循环体;<br>}<br>循环条件：一般为关系表达式或一个bool类型值。<br>循环体：要重复执行的代码。  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int a = 0;</span><br><span class="line">while (a &lt; 10)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(&quot;XXX&quot;);</span><br><span class="line">    a++;</span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Console.WriteLine(&quot;AorB&quot;);</span><br><span class="line">string answer = Console.ReadLine();</span><br><span class="line">while (answer == &quot;A&quot;)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(&quot;XXX&quot;);</span><br><span class="line">    answer = Console.ReadLine();</span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Console.WriteLine(&quot;输入数量&quot;);</span><br><span class="line">string number = Console.ReadLine();</span><br><span class="line">int shuliang = Convert.ToInt32(number);</span><br><span class="line">int a = 1;</span><br><span class="line">int b = 0;</span><br><span class="line">while (a &lt;= shuliang)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(&quot;输入第&#123;0&#125;个分数&quot;,a);</span><br><span class="line">    int fenshu = Convert.ToInt32(Console.ReadLine());</span><br><span class="line">    b = b + fenshu;   //b += fenshu</span><br><span class="line">    a++;</span><br><span class="line">&#125;</span><br><span class="line">Console.WriteLine(&quot;总分为&#123;0&#125;,平均分为&#123;1&#125;&quot;, b, b / shuliang);</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><h1 id="do-while"><a href="#do-while" class="headerlink" title="do-while"></a>do-while</h1><p>语法<br>do<br>{<br>循环体；<br>}while（循环条件）;  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">string answer = &quot;&quot;;</span><br><span class="line">do</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(&quot;XXX&quot;);</span><br><span class="line">    answer = Console.ReadLine();</span><br><span class="line">&#125; while (answer == &quot;A&quot;);</span><br><span class="line">Console.WriteLine(&quot;XXXXX&quot;);</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><h1 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h1><p>语法<br>for(初始表达式;条件表达式;增量表达式)<br>{<br>循环体代码<br>}  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int sum = 0;</span><br><span class="line">for (int i = 1; i &lt;= 100; i++)</span><br><span class="line">&#123;</span><br><span class="line">    sum += i;</span><br><span class="line">&#125;</span><br><span class="line">Console.WriteLine(sum);</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">int sumji = 0;</span><br><span class="line">int sumou = 0;</span><br><span class="line">for (int i = 1; i &lt;= 100; i++) //或者i += 2，</span><br><span class="line">&#123;</span><br><span class="line">    sumji += i++;</span><br><span class="line">&#125;</span><br><span class="line">for (int i = 1; i &lt;= 100; i++) //或者i=2,i+=2</span><br><span class="line">&#123;</span><br><span class="line">    sumou += ++i;</span><br><span class="line">&#125;</span><br><span class="line">Console.WriteLine(&quot;基数和是&#123;0&#125;，偶数和是&#123;1&#125;&quot;, sumji, sumou);</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><h1 id="for语句嵌套"><a href="#for语句嵌套" class="headerlink" title="for语句嵌套"></a>for语句嵌套</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">int sum = 1;</span><br><span class="line">for (int i = 1; i &lt;= 10; i++)</span><br><span class="line">&#123;</span><br><span class="line">    for (int j = 1; j &lt;=10; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(&quot;XXXXX&#123;0&#125;&quot;,sum);</span><br><span class="line">        sum++;</span><br><span class="line">    &#125;              </span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><p>九九表  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 1; i &lt; 10; i++)</span><br><span class="line">&#123;</span><br><span class="line">    for (int j = 1; j &lt;= i; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        Console.Write(&quot;&#123;0&#125;x&#123;1&#125;=&#123;2&#125;\t&quot;, i, j, i * j);</span><br><span class="line">    &#125;</span><br><span class="line">    Console.WriteLine(&quot;&quot;);</span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> C#基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> while </tag>
+            
+            <tag> for </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C#基础记录(3)</title>
+      <link href="/2020/02/17/c%E6%B2%99%E5%9D%A13/"/>
+      <url>/2020/02/17/c%E6%B2%99%E5%9D%A13/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h1><p>＞ ＜ ＞= ＜= == !=<br>由关系运算符连接的表达式为关系表达式<br>关系表达式结果只有对错所以结果用bool类型<br>bool a = 100 ＞ 50<br>console.WritLine（a）;</p><h1 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h1><ol><li><p>&amp;&amp;逻辑与<br>bool b = 140 ＜ 200&amp;&true;<br>（或140＜200&amp;&amp;7＞1）<br>console.WritLine(b);  </p></li><li><p>||逻辑或<br>同理  </p></li><li><p>！逻辑非<br>bool c = !(5＞3);<br>console.writeline(c);  </p><h1 id="if-else"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</h1></li><li><p>if语句<br>①语法<br>if(判断条件)<br>{<br>代码<br>}<br>判断条件一般为关系表达式或bool类型的值<br>true执行，false跳过  </p></li><li><p>if-else语句<br>语法<br>if(判断条件)<br>{<br>代码<br>} else {<br>代码<br>}  </p></li><li><p>if-else-if语句</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">int a = Convert.ToInt32(Console.ReadLine());</span><br><span class="line">if (a &gt; 200)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(&quot;200 +&quot;);</span><br><span class="line">&#125;</span><br><span class="line">else</span><br><span class="line">&#123;</span><br><span class="line">    if (a &gt; 150 &amp;&amp; a &lt;= 200) //&amp;&amp;a《200可省略</span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(&quot;150~200&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        if (a &gt; 100 &amp;&amp; a &lt;= 150)//同理</span><br><span class="line">        &#123;</span><br><span class="line">            Console.WriteLine(&quot;100~150&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            if (a &lt;= 100)//同理</span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(&quot;100以下&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure></li></ol><h1 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">string a = Console.ReadLine();</span><br><span class="line">switch (a)</span><br><span class="line">&#123;</span><br><span class="line">    case &quot;小明&quot;: Console.WriteLine(&quot;XX&quot;);</span><br><span class="line">        break;</span><br><span class="line">    case &quot;小红&quot;:Console.WriteLine(&quot;XXX&quot;);</span><br><span class="line">        break;</span><br><span class="line">    case &quot;小李&quot;:Console.WriteLine(&quot;XXXX&quot;);</span><br><span class="line">        break;</span><br><span class="line">    default:Console.WriteLine(&quot;XXXXXXXXX&quot;);</span><br><span class="line">        break;</span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> C#基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 占位符 </tag>
+            
+            <tag> 关系运算符 </tag>
+            
+            <tag> 逻辑运算符 </tag>
+            
+            <tag> if-else </tag>
+            
+            <tag> switch </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C#基础记录(2)</title>
+      <link href="/2020/02/16/c%E6%B2%99%E5%9D%A12/"/>
+      <url>/2020/02/16/c%E6%B2%99%E5%9D%A12/</url>
+      
+        <content type="html"><![CDATA[<p>axure</p><h1 id="加加与减减"><a href="#加加与减减" class="headerlink" title="加加与减减"></a>加加与减减</h1><p>1.++<br>(1)前++和后++<br>单独使用，前++与后++都为自身+1<br>前++，自身+1，后参与运算。<br>int a = 10;<br>int b = 5 + ++a;<br>a为11，b为16<br>后++，原值先参与运算，后自身+1。<br>int a = 10;<br>int b = 5 + a++;<br>a为11，b为15<br>+=<br>int a = 10;<br>int a += 20；<br>a为30，a+20=a<br>int a = 10;<br>int b = a++ + ++a * 3 + –a + a++;<br>10+12*3+11+11</p><h1 id="一元运算符"><a href="#一元运算符" class="headerlink" title="一元运算符"></a>一元运算符</h1><p>++ –<br>只需要一个操作数完成的运算。  </p><h1 id="二元运算符"><a href="#二元运算符" class="headerlink" title="二元运算符"></a>二元运算符</h1><p>例+ - * / %<br>+连接字符串或字符串与数字<br>需要两个或以上才能完成的操作符。  </p><h1 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h1><p>1.一元运算符优先级高于二元运算符。<br>2.表达式中一、二元运算符共存，首先计算一元运算符。  </p><h1 id="接受用户输入"><a href="#接受用户输入" class="headerlink" title="接受用户输入"></a>接受用户输入</h1><p>console.readline();<br>例Console.WriteLine(“请输入分类：”)；<br>string tags = Console.ReadLine();<br>console.writline(“你的分类为{0}”，name)；<br>console.readkey();<br>输入整数转换数字<br>string str = Console.ReadLine();<br>int num = Convert.ToInt32(str):<br>Console.WriteLine(num);<br>输入小数转换数字<br>string str = Console.ReadLine();<br>double num = Convert.ToDouble(str):<br>Console.WriteLine(num);   </p><h1 id="常用转义符"><a href="#常用转义符" class="headerlink" title="常用转义符"></a>常用转义符</h1><p>\n:换行<br>&quot;:英文半角双引号<br>（”12345&quot;6&quot;7”）<br>\:一个<br>\t:一个tab空格<br>\b:一个Backpace（头尾无用）<br>@:在字符串前<br>①取消“\”在字符串中的转义作用，使其单纯表示斜杠（””除外）<br>（@”C\a\b\c\d\e\f”)<br>②将字符串按原格式输出<br>（@“aabbccddeff<br>gghh“）  </p><h1 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h1><p>1.隐式类型转换（自动类型转换）<br>①两种类型兼容<br>例int和double兼容<br>②原类型小于目标类型<br>小转大例如int–double,int–float<br>2.显式类型转换（强制类型转换）<br>①两种类型兼容<br>②原类型大于目标类型<br>double-int,double-float<br>例double a = 3.14;<br>int b = (int)a;<br>3.表达式中类型转换<br>两个int类型加减乘除取余后仍为整数类型。<br>如果一个操作数为double类型，则整个表达式可提升为double类型。  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C#基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 类型转换 </tag>
+            
+            <tag> 转义符 </tag>
+            
+            <tag> 一二元运算符 </tag>
+            
+            <tag> 用户输入 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C#基础记录(1)</title>
+      <link href="/2020/02/15/c%E6%B2%99%E5%9D%A11/"/>
+      <url>/2020/02/15/c%E6%B2%99%E5%9D%A11/</url>
+      
+        <content type="html"><![CDATA[<p>Console.WriteLine(“”); 内容输出至控制台<br>Console.ReadKey();     暂停当前程序，等待按任意键  </p><h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>//&nbsp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&ensp;&ensp;&ensp; 行注释<br>/* */    &ensp;&ensp;&ensp;&ensp;&ensp;  大段文本注释<br>///      &ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp; 类、方法注释<br>ctrl+k+c &ensp;&nbsp;注释所选代码<br>ctrl+k+u    &ensp;&nbsp;取消注释</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#region折叠（起）</span><br><span class="line">#endregion折叠（止）</span><br></pre></td></tr></table></figure><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>Properties:属性<br>App.config:配置文件<br>Program:类文件</p><p>变量</p><p>变量类型 变量名 = 值    </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int number = 10;</span><br><span class="line">int speed;</span><br><span class="line">speed = 10;</span><br></pre></td></tr></table></figure><p>先声明，后赋值，再使用</p><h1 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h1><ol><li><strong>int</strong><br>范围-2147483648~2147483647</li><li><strong>float</strong><br>单精度小数<br>数值后需加f。<br>整数、小数，小数点后7位</li><li><strong>double</strong><br>双精度小数<br>小数点后15~16位</li><li><strong>string</strong><br>字符串类型<br>存储文本、空。<br>值需加双引号  </li><li><strong>char</strong><br>字符类型<br>存储单个字符，最多最少只能一个字符，不能存储空<br>值需加单引号  </li><li><strong>bool</strong><br>描述对错<br>值只有true和false<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1>（1）+&nbsp;-&nbsp;*&nbsp;/<br>10/3 = 3  取整<br>10%3 = 1  取余<br>（2）“=”和“+”<h1 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h1>{}<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int A =10  </span><br><span class="line">float B =20  </span><br><span class="line">double C = 30  </span><br><span class="line">Console.WriteLine(&quot;XXX&#123;0&#125;,DAV&#123;1&#125;,IFN&#123;2&#125;&quot;，A,B,C);</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> C#基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据类型 </tag>
+            
+            <tag> 运算符 </tag>
+            
+            <tag> 占位符 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第二</title>
       <link href="/2019/10/18/%E7%AC%AC%E4%BA%8C/"/>
       <url>/2019/10/18/%E7%AC%AC%E4%BA%8C/</url>
@@ -23,37 +143,6 @@
             <tag> 标签一 </tag>
             
             <tag> ballball啦 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>C#基础记录(1)</title>
-      <link href="/2019/10/16/c%E6%B2%99%E5%9D%A11/"/>
-      <url>/2019/10/16/c%E6%B2%99%E5%9D%A11/</url>
-      
-        <content type="html"><![CDATA[<p>Console.WriteLine(“”); 内容输出至控制台<br>Console.ReadKey();     暂停当前程序，等待按任意键  </p><h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><p>//&nbsp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&ensp;&ensp;&ensp; 行注释<br>/* */    &ensp;&ensp;&ensp;&ensp;&ensp;  大段文本注释<br>///      &ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp; 类、方法注释<br>ctrl+k+c &ensp;&nbsp;注释所选代码<br>ctrl+k+u    &ensp;&nbsp;取消注释</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#region折叠（起）</span><br><span class="line">#endregion折叠（止）</span><br></pre></td></tr></table></figure><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>Properties:属性<br>App.config:配置文件<br>Program:类文件</p><p>变量</p><p>变量类型 变量名 = 值    </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int number = 10;</span><br><span class="line">int speed;</span><br><span class="line">speed = 10;</span><br></pre></td></tr></table></figure><p>先声明，后赋值，再使用</p><h1 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h1><ol><li><strong>int</strong><br>范围-2147483648~2147483647</li><li><strong>float</strong><br>单精度小数<br>数值后需加f。<br>整数、小数，小数点后7位</li><li><strong>double</strong><br>双精度小数<br>小数点后15~16位</li><li><strong>string</strong><br>字符串类型<br>存储文本、空。<br>值需加双引号  </li><li><strong>char</strong><br>字符类型<br>存储单个字符，最多最少只能一个字符，不能存储空<br>值需加单引号  </li><li><strong>bool</strong><br>描述对错<br>值只有true和false<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1>（1）+&nbsp;-&nbsp;*&nbsp;/<br>10/3 = 3  取整<br>10%3 = 1  取余<br>（2）“=”和“+”<h1 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h1>{}<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int A =10  </span><br><span class="line">float B =20  </span><br><span class="line">double C = 30  </span><br><span class="line">Console.WriteLine(&quot;XXX&#123;0&#125;,DAV&#123;1&#125;,IFN&#123;2&#125;&quot;，A,B,C);</span><br></pre></td></tr></table></figure></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 分类一 </category>
-          
-          <category> 分类一下二 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 标签一 </tag>
-            
-            <tag> 标签二 </tag>
-            
-            <tag> 标签三 </tag>
             
         </tags>
       
