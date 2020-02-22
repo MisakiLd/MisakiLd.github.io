@@ -185,7 +185,7 @@
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜尋" />
+						<input type="text" class="input u-search-input" placeholder="Search" />
 						<i class="icon fas fa-search fa-fw"></i>
 					</form>
 				</div>
@@ -410,7 +410,8 @@
 <p>九九表  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 1; i &lt; 10; i++)</span><br><span class="line">&#123;</span><br><span class="line">    for (int j = 1; j &lt;= i; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        Console.Write(&quot;&#123;0&#125;x&#123;1&#125;=&#123;2&#125;\t&quot;, i, j, i * j);</span><br><span class="line">    &#125;</span><br><span class="line">    Console.WriteLine(&quot;&quot;);</span><br><span class="line">&#125;</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
 
-
+<h1 id="break，continue"><a href="#break，continue" class="headerlink" title="break，continue"></a>break，continue</h1><p>1.break<br>结束循环<br>2.continue<br>结束本次循环  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">int sum = 0;</span><br><span class="line">int i = 1;</span><br><span class="line">while (i &lt;= 100)</span><br><span class="line">&#123;</span><br><span class="line">    if (i % 7 == 0)</span><br><span class="line">    &#123;</span><br><span class="line">        i++;</span><br><span class="line">        continue;</span><br><span class="line">    &#125;</span><br><span class="line">    sum += i;</span><br><span class="line">    i++;</span><br><span class="line">&#125;</span><br><span class="line">Console.WriteLine(sum);</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
       </div>
       
         <br>
@@ -421,10 +422,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-17T15:25:26+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-19T21:25:15+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新於 Feb 17, 2020</p>
+    <p>updated at Feb 19, 2020</p>
   </a>
 </div>
 
@@ -494,10 +495,29 @@
       
           <div class="prev-next">
               
+                  <section class="prev">
+                      <span class="art-item-left">
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
+                          <h4>
+                              <a href="/2020/02/19/c沙坡5/" rel="prev" title="C#基础记录(5)">
+                                
+                                    C#基础记录(5)
+                                
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/常量/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 常量</a> <a class="tag" href="/tags/枚举/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 枚举</a> <a class="tag" href="/tags/结构体/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 结构体</a> <a class="tag" href="/tags/数组/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 数组</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
               
                   <section class="next">
                       <span class="art-item-right" aria-hidden="true">
-                          <h6>下一頁&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
                               <a href="/2020/02/17/c沙坡3/" rel="prev" title="C#基础记录(3)">
                                   
@@ -639,14 +659,14 @@
   <section class='widget toc-wrapper'>
     
 <header class='pure'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目錄</div>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
   
     <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#while语句"><span class="toc-text">while语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#do-while"><span class="toc-text">do-while</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#for语句"><span class="toc-text">for语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#for语句嵌套"><span class="toc-text">for语句嵌套</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#while语句"><span class="toc-text">while语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#do-while"><span class="toc-text">do-while</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#for语句"><span class="toc-text">for语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#for语句嵌套"><span class="toc-text">for语句嵌套</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#break，continue"><span class="toc-text">break，continue</span></a></li></ol>
     </div>
   </section>
 
@@ -795,7 +815,7 @@
   <section class='widget category'>
     
 <header class='pure'>
-  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分類</div>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
   
     <a class="rightBtn"
     
@@ -811,7 +831,7 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/C-基础/" href="/categories/C-基础/"><div class='name'>C#基础</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/C-基础/" href="/categories/C-基础/"><div class='name'>C#基础</div><div class='badge'>(7)</div></a></li>
         
           <li><a class="flat-box" title="/categories/分类一/" href="/categories/分类一/"><div class='name'>分类一</div><div class='badge'>(2)</div></a></li>
         
@@ -856,7 +876,7 @@
   <section class='widget tagcloud'>
     
 <header class='pure'>
-  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;熱門標籤</div>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
   
     <a class="rightBtn"
     
@@ -870,7 +890,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/ballball啦/" style="font-size: 14px; color: #999">ballball啦</a> <a href="/tags/for/" style="font-size: 14px; color: #999">for</a> <a href="/tags/if-else/" style="font-size: 14px; color: #999">if-else</a> <a href="/tags/switch/" style="font-size: 14px; color: #999">switch</a> <a href="/tags/while/" style="font-size: 14px; color: #999">while</a> <a href="/tags/一二元运算符/" style="font-size: 14px; color: #999">一二元运算符</a> <a href="/tags/关系运算符/" style="font-size: 14px; color: #999">关系运算符</a> <a href="/tags/占位符/" style="font-size: 24px; color: #555">占位符</a> <a href="/tags/数据类型/" style="font-size: 14px; color: #999">数据类型</a> <a href="/tags/标签一/" style="font-size: 24px; color: #555">标签一</a> <a href="/tags/标签三/" style="font-size: 14px; color: #999">标签三</a> <a href="/tags/标签二/" style="font-size: 14px; color: #999">标签二</a> <a href="/tags/用户输入/" style="font-size: 14px; color: #999">用户输入</a> <a href="/tags/类型转换/" style="font-size: 14px; color: #999">类型转换</a> <a href="/tags/转义符/" style="font-size: 14px; color: #999">转义符</a> <a href="/tags/运算符/" style="font-size: 14px; color: #999">运算符</a> <a href="/tags/逻辑运算符/" style="font-size: 14px; color: #999">逻辑运算符</a>
+      <a href="/tags/ballball啦/" style="font-size: 14px; color: #999">ballball啦</a> <a href="/tags/for/" style="font-size: 14px; color: #999">for</a> <a href="/tags/if-else/" style="font-size: 14px; color: #999">if-else</a> <a href="/tags/out-ref参数/" style="font-size: 14px; color: #999">out.ref参数</a> <a href="/tags/switch/" style="font-size: 14px; color: #999">switch</a> <a href="/tags/while/" style="font-size: 14px; color: #999">while</a> <a href="/tags/一二元运算符/" style="font-size: 14px; color: #999">一二元运算符</a> <a href="/tags/关系运算符/" style="font-size: 14px; color: #999">关系运算符</a> <a href="/tags/函数重载/" style="font-size: 14px; color: #999">函数重载</a> <a href="/tags/占位符/" style="font-size: 24px; color: #555">占位符</a> <a href="/tags/常量/" style="font-size: 14px; color: #999">常量</a> <a href="/tags/数据类型/" style="font-size: 14px; color: #999">数据类型</a> <a href="/tags/数组/" style="font-size: 14px; color: #999">数组</a> <a href="/tags/方法语法/" style="font-size: 14px; color: #999">方法语法</a> <a href="/tags/枚举/" style="font-size: 14px; color: #999">枚举</a> <a href="/tags/标签一/" style="font-size: 24px; color: #555">标签一</a> <a href="/tags/标签三/" style="font-size: 14px; color: #999">标签三</a> <a href="/tags/标签二/" style="font-size: 14px; color: #999">标签二</a> <a href="/tags/用户输入/" style="font-size: 14px; color: #999">用户输入</a> <a href="/tags/类型转换/" style="font-size: 14px; color: #999">类型转换</a> <a href="/tags/结构体/" style="font-size: 14px; color: #999">结构体</a> <a href="/tags/转义符/" style="font-size: 14px; color: #999">转义符</a> <a href="/tags/运算符/" style="font-size: 14px; color: #999">运算符</a> <a href="/tags/逻辑运算符/" style="font-size: 14px; color: #999">逻辑运算符</a> <a href="/tags/面向对象/" style="font-size: 14px; color: #999">面向对象</a>
     </div>
   </section>
 
@@ -1058,19 +1078,19 @@
     </div>
   
   <br>
-  <div><p>博客內容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
   <div>
-    本站使用
+    Use
     <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
     as theme
     
-      ，
+      , 
       total visits
       <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
       times
     
-    。
+    . 
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1194,15 +1214,15 @@ setInterval("createtime()",250);
 <!-- 复制 -->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
-  let COPY_SUCCESS = "複製成功";
-  let COPY_FAILURE = "複製失敗";
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
   /*页面载入完成后，创建复制按钮*/
   !function (e, t, a) {
     /* code */
     var initCopyCode = function(){
       var copyHtml = '';
       copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '  <i class="fa fa-copy"></i><span>複製</span>';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
       copyHtml += '</button>';
       $(".highlight .code pre").before(copyHtml);
       var clipboard = new ClipboardJS('.btn-copy', {
